@@ -1,0 +1,421 @@
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #182230;
+  background: #f7f8fc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.header {
+  height: 76px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #e8ebf2;
+}
+
+.brand {
+  color: #5145cd;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.header nav {
+  display: flex;
+  gap: 28px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #505b6d;
+}
+
+.hero {
+  padding: 90px 7% 100px;
+  background: linear-gradient(125deg, #eeedff, #f9f7ff 58%, #e7f4ff);
+}
+
+.eyebrow {
+  display: inline-block;
+  color: #6457d9;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+}
+
+.hero h1 {
+  margin: 18px 0;
+  max-width: 750px;
+  font-size: clamp(40px, 6vw, 66px);
+  line-height: 1.08;
+  letter-spacing: -2.8px;
+}
+
+.hero p {
+  max-width: 570px;
+  color: #667085;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.primary-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 9px;
+  background: #5b4bd8;
+  color: white;
+  padding: 13px 21px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.primary-button:hover {
+  background: #4434bd;
+  transform: translateY(-1px);
+}
+
+.primary-button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+  transform: none;
+}
+
+.section {
+  padding: 70px 7%;
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.section-heading h2,
+.about-section h2 {
+  margin: 9px 0 0;
+  font-size: 34px;
+  letter-spacing: -1.2px;
+}
+
+.count {
+  color: #667085;
+  font-size: 13px;
+}
+
+.internship-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.internship-card,
+.form-card {
+  background: white;
+  border: 1px solid #e8eaf2;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 28px rgba(30, 35, 90, 0.035);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: #eeedff;
+  color: #5145cd;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.tag,
+.detail-pills span {
+  padding: 7px 11px;
+  border-radius: 30px;
+  background: #f0efff;
+  color: #5b4bd8;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.internship-card h3 {
+  margin: 23px 0 6px;
+  font-size: 19px;
+  letter-spacing: -0.4px;
+}
+
+.company-name {
+  margin: 0;
+  color: #6a61cb;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.description {
+  color: #687386;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.internship-card .description {
+  min-height: 98px;
+  margin: 18px 0;
+}
+
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px 0;
+  border-top: 1px solid #eef0f5;
+  color: #626d7e;
+  font-size: 12px;
+}
+
+.card-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  color: #5145cd;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.card-link span {
+  font-size: 20px;
+}
+
+.about-section {
+  padding: 65px 7%;
+  background: #efefff;
+  text-align: center;
+}
+
+.about-section p {
+  color: #667085;
+  line-height: 1.7;
+}
+
+.details-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(300px, 0.8fr);
+  align-items: start;
+  gap: 45px;
+  min-height: 70vh;
+}
+
+.back-button {
+  display: block;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin-bottom: 35px;
+  color: #5b4bd8;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.details-content h1 {
+  margin: 14px 0 10px;
+  font-size: clamp(32px, 4vw, 47px);
+  line-height: 1.15;
+  letter-spacing: -1.7px;
+}
+
+.detail-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 25px 0 38px;
+}
+
+.details-content h2 {
+  margin-top: 32px;
+  font-size: 21px;
+}
+
+.benefit-list {
+  padding-left: 22px;
+  color: #687386;
+  line-height: 2.2;
+}
+
+.form-card h2 {
+  margin: 12px 0 5px;
+  font-size: 28px;
+}
+
+.form-card > p {
+  color: #687386;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 23px;
+}
+
+.form-card label {
+  margin: 14px 0 7px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.form-card input {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #dfe3ec;
+  border-radius: 8px;
+  padding: 12px;
+  outline: none;
+  background: white;
+}
+
+.form-card input:focus {
+  border-color: #7669e7;
+  box-shadow: 0 0 0 3px #eeedff;
+}
+
+.selected-internship {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 8px;
+  background: #f7f6ff;
+}
+
+.selected-internship span,
+.selected-internship small {
+  color: #687386;
+  font-size: 12px;
+}
+
+.selected-internship strong {
+  font-size: 13px;
+}
+
+.submit-button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.status-message {
+  padding: 12px;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.status-message.success {
+  color: #166534;
+  background: #ecfdf3;
+}
+
+.status-message.error {
+  color: #b42318;
+  background: #fef3f2;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 26px 7%;
+  background: white;
+  border-top: 1px solid #e8ebf2;
+  color: #778092;
+  font-size: 12px;
+}
+
+.footer span:first-child {
+  color: #5145cd;
+  font-weight: 800;
+}
+
+@media (max-width: 900px) {
+  .internship-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .details-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 65px;
+    padding: 0 5%;
+  }
+
+  .header nav {
+    gap: 14px;
+  }
+
+  .hero,
+  .section,
+  .about-section {
+    padding: 48px 5%;
+  }
+
+  .hero h1 {
+    letter-spacing: -1.5px;
+  }
+
+  .internship-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 24px 5%;
+  }
+}
